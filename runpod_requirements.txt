@@ -1,0 +1,28 @@
+# RunPod Serverless Requirements for Enhanced Dia TTS
+# Optimized for serverless deployment with minimal dependencies
+
+# Core TTS Dependencies
+torch>=2.0.0
+torchaudio>=2.0.0
+numpy>=1.21.0
+soundfile>=0.12.1
+descript-audio-codec>=1.0.0
+huggingface-hub>=0.16.0
+safetensors>=0.3.0
+
+# RunPod Handler
+runpod>=1.0.0
+
+# Configuration and Utilities
+python-dotenv>=1.0.0
+PyYAML>=6.0
+
+# Progress and Monitoring
+tqdm>=4.64.0
+
+# Audio Processing (Optional but recommended for better quality)
+librosa>=0.10.0
+scipy>=1.9.0
+
+# For base64 encoding (usually included in Python)
+# base64 - built-in module

@@ -1,0 +1,44 @@
+# Enhanced Dia TTS Requirements for Serverless Deployment
+
+# Core TTS Dependencies
+torch>=2.0.0
+torchaudio>=2.0.0
+numpy>=1.21.0
+soundfile>=0.12.1
+descript-audio-codec>=1.0.0
+huggingface-hub>=0.16.0
+safetensors>=0.3.0
+
+# API Framework
+fastapi>=0.100.0
+uvicorn[standard]>=0.20.0
+pydantic>=2.0.0
+
+# Audio Processing (Optional but Recommended)
+librosa>=0.10.0
+scipy>=1.9.0
+
+# Progress and Monitoring
+tqdm>=4.64.0
+
+# Configuration and Utilities
+python-dotenv>=1.0.0
+PyYAML>=6.0
+
+# Optional Audio Enhancements
+# These can be installed for better audio processing but are not required
+# pydub>=0.25.1
+# pyloudnorm>=0.1.0
+# noisereduce>=3.0.0
+
+# Development and Testing (Optional)
+# pytest>=7.0.0
+# black>=22.0.0
+# isort>=5.10.0
+
+# For production deployment
+gunicorn>=20.0.0  # Alternative to uvicorn for production
+
+# Memory profiling (Optional)
+# psutil>=5.9.0
+# memory-profiler>=0.60.0

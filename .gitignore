@@ -1,22 +1,89 @@
-# Python-generated files
+# Enhanced Dia TTS - Git Ignore File
+
+# Python
 __pycache__/
-*.py[oc]
+*.py[cod]
+*$py.class
+*.so
+.Python
 build/
+develop-eggs/
 dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
 wheels/
-*.egg-info
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
 # Virtual environments
+.env
 .venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Model cache and data
+model_cache/
+*.pth
+*.safetensors
+*.bin
+
+# Voice library data
+voice_library/
+*.pt
+*.wav
+*.mp3
+*.opus
+reference_audio/
+
+# Output files
+outputs/
+*.wav
+*.mp3
+test_output.*
+example_*.wav
+
+# Configuration files with secrets
+.env
+config.yaml
+enhanced_tts_config.yaml
+runpod_config.yaml
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
 .idea/
-.gradio
+*.swp
+*.swo
 
-**/*.pth
-**/*.safetensors
-**/*.mp3
-!example_prompt.mp3
-**/*.txt
+# OS
+.DS_Store
+Thumbs.db
 
-.ruff_cache
-.ipynb_checkpoints
-config.json
+# Jupyter
+.ipynb_checkpoints/
+
+# Local test files
+test_local.py
+local_test_*
+
+# Docker build context (keep Dockerfiles)
+.dockerignore
+
+# Temporary files
+temp/
+tmp/
+*.tmp
