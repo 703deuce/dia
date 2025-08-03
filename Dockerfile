@@ -1,7 +1,8 @@
 # RunPod Serverless Dockerfile for Enhanced Dia TTS
 # Optimized for fast cold starts and minimal size
+# Cache bust: 2025-01-03-v2
 
-FROM nvidia/cuda:11.8.0-runtime-ubuntu22.04
+FROM pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime
 
 # Set environment variables
 ENV DEBIAN_FRONTEND=noninteractive
